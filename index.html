@@ -1,61 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Treact</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="index.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treact</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
 
-<body>
-  <section>
-    <nav>
-      <div class="row nav__row">
-        <div class="nav__logo">
-          <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="Logo">
-          <div class="nav__logo--title">Treact</div>
-        </div>
-        <div class="nav__links">
-          <a class="nav__link" href="#">About</a>
-          <a class="nav__link" href="#">Blog</a>
-          <a class="nav__link" href="#">Pricing</a>
-          <a class="nav__link" href="#">Contact Us</a>
-          <a class="nav__link login" href="#">Login</a>
-          <a class="nav__link--primary" href="#">Sign Up</a>  
-        </div>
-        <button class="btn__menu" onclick="openMenu()">
-
-        </button>
-      </div>
-    </nav>
-
-    <header>
-      <div class="conatiner">
-        <div class="row">
-          <div class="header__description">
-            <h1>Beautiful react Templates <span class="purple">for you</span>
-            </h1>
-            <p class="header__description--para">
-              Our templates are easy to set up, understand and customize. Fully modular components with a variety of pages and components.
-            </p>
-            <div class="header__email">
-              <input type="email" class="header__email--input" placeholder="Your E-mail address">
-              <button class="header__email--button">Get Started</button>
-            </div>
-            <p class="header__customer--title">
-              Our trusted customers
-            </p>
-            <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers" alt="">
+  <body>
+    <section>
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              class="nav__logo--img"
+              src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="Logo"
+            />
+            <div class="nav__logo--title">Treact</div>
           </div>
-          <figure class="header__img--wrapper">
-            <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="header__img" alt="Header Image">
-          </figure>
+          <div class="nav__links">
+            <a class="nav__link" href="#">About</a>
+            <a class="nav__link" href="#">Blog</a>
+            <a class="nav__link" href="#">Pricing</a>
+            <a class="nav__link" href="#">Contact Us</a>
+            <a class="nav__link login" href="#">Login</a>
+            <a class="nav__link--primary" href="#">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()"></button>
         </div>
-      </div>
-    </header>
-  </section>
+      </nav>
 
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+              <h1>
+                Beautiful React Templates <span class="purple">for you.</span>
+              </h1>
+              <p class="header__description--para">
+                Our templates are easy to set up, understand and customize.
+                Fully modular components with a variety of pages and components.
+              </p>
+              <div class="header__email">
+                <input
+                  type="email"
+                  class="header__email--input"
+                  placeholder="Your E-mail Address"
+                />
+                <button class="header__email--button">Get Started</button>
+              </div>
+              <p class="header__customer--title">OUR TRUSTED CUSTOMERS</p>
+              <img
+                src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                class="header__customers"
+                alt=""
+              />
+            </div>
+            <figure class="header__img--wrapper">
+              <img
+                src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                class="header__img"
+                alt="Header Image"
+              />
+            </figure>
+          </div>
+        </div>
+      </header>
+    </section>
 
-</body>
+    <main>
+      <section id="features">
+        <div class="container">
+          <div class="row__narrow">
+            <h4 class="section__tag">FEATURES</h4>
+            <h2 class="section__title">
+              We Have Amazing <span class="purple">Services</span>
+            </h2>
+            <div class="section__para">
+              lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> Secure</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> 24/7 Support</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> Customizable</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> Reliable</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> Fast</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <div class="features">
+              <div class="feature">
+                <div class="feature__row">
+                  <figure class="feature__img--wrapper">
+                    <img src="./assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" alt="">
+                  </figure>
+                  <div class="feature__text">
+                    <h2 class="feature__title"> Easy</h2>
+                    <p class="feature__para">
+                      lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+  
+            </div>
+          </div>
+        </div>
+      </section>
+    
+    
+    </main>
+  
+  </body>
 </html>
