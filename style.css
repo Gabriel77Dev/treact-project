@@ -623,6 +623,11 @@ header {
   align-items: center;
 }
 
+#pricing .section__para {
+  max-width: 576px;
+  text-align: center;
+}
+
 .plans {
   display: flex;
   position: relative;
@@ -673,6 +678,8 @@ header {
   margin-left: -2rem;
   margin-right: -2rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1 1 0%;
   border-top-width: 2px;
   border-bottom-width: 2px;
@@ -724,18 +731,18 @@ header {
 }
 
 .plan__button {
-  border-radius: 0.2rem;
-  background-color: rgb(100, 21, 255);
+  background-color: rgb(100 21 255);
   padding: 0.75rem 2rem;
-  color: rgb(247, 250, 252);
+  font-weight: 700;
+  color: rgb(247 250 252);
   transition: all 300ms ease;
   width: 100%;
   border-radius: 9999px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   text-transform: uppercase;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.05em;
 }
 
 .plan__button:hover {
@@ -745,11 +752,12 @@ header {
     rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
 
-.plans_blob {
+.plans__blob {
   z-index: -10;
   position: absolute;
   left: 0;
   bottom: 0;
+  transform: translateX(-50%) translateY(50%) scaleX(1) scaleY(1);
   height: 256px;
   width: 256px;
   opacity: 0.25;
