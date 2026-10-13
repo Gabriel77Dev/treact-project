@@ -211,8 +211,6 @@ nav {
   margin-left: 24px;
 }
 
-
-
 div {
   display: block;
   unicode-bidi: isolate;
@@ -301,8 +299,6 @@ div {
   top: 24px;
   right: 18px;
 }
-
-
 
 /* header styles */
 
@@ -1113,11 +1109,16 @@ footer {
   overflow: hidden;
 }
 
+.footer__row {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .footer__blob--1 {
